@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/tile_selector"
+    android:focusable="true"
+    android:clickable="true"
+    android:longClickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="14dp">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="★"
+        android:textColor="#FBBF24"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

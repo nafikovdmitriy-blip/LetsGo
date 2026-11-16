@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07090E"
+    android:orientation="vertical"
+    android:padding="28dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp">
+
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harry's TV"
+            android:textColor="#818CF8"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="12:00 PM"
+            android:textColor="#94A3B8"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSwitchUser"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:text="Switch Playlist"
+            android:backgroundTint="#1E1B4B"
+            android:textColor="#FFFFFF"
+            android:focusable="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="14dp">
+
+        <LinearLayout
+            android:id="@+id/tileLiveTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/tile_selector"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIVE TV"
+                android:textColor="#818CF8"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Channels &amp; Broadcasts"
+                android:textColor="#64748B"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tileMovies"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="6dp"
+            android:background="@drawable/tile_selector"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOVIES"
+                android:textColor="#F43F5E"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video On Demand"
+                android:textColor="#64748B"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tileSeries"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/tile_selector"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SERIES"
+                android:textColor="#10B981"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TV Shows &amp; Seasons"
+                android:textColor="#64748B"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/tileEpgGuide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/tile_selector"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EPG GUIDE"
+                android:textColor="#FBBF24"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XMLTV Schedule Timeline"
+                android:textColor="#64748B"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tileFavorites"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/tile_selector"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAVORITES"
+                android:textColor="#EC4899"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saved Channels &amp; Movies"
+                android:textColor="#64748B"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAccountFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Harry's TV Connected"
+        android:textColor="#475569"
+        android:textSize="13sp" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:use_controller="true"
+        app:show_timeout="4000" />
+
+    <LinearLayout
+        android:id="@+id/osdInfoBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="#CC07090E"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/tvChannelOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#818CF8"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEpgOsdSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E2E8F0"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</FrameLayout>
