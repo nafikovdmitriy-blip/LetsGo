@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07090E"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="28dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harry's TV"
+        android:textColor="#818CF8"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultimate Entertainment Experience"
+        android:textColor="#64748B"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_width="480dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnModeXtream"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="XTREAM CODES API"
+            android:textStyle="bold"
+            android:backgroundTint="#6366F1"
+            android:textColor="#FFFFFF"
+            android:focusable="true"
+            android:layout_marginEnd="6dp" />
+
+        <Button
+            android:id="@+id/btnModeM3u"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="M3U PLAYLIST URL"
+            android:textStyle="bold"
+            android:backgroundTint="#1E1B4B"
+            android:textColor="#94A3B8"
+            android:focusable="true"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etProfileName"
+        android:layout_width="480dp"
+        android:layout_height="48dp"
+        android:hint="Playlist Name (e.g. Living Room TV)"
+        android:background="#0F172A"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#475569"
+        android:paddingHorizontal="16dp"
+        android:singleLine="true"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutXtreamFields"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Username"
+            android:background="#0F172A"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#475569"
+            android:paddingHorizontal="16dp"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="#0F172A"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#475569"
+            android:paddingHorizontal="16dp"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etServerUrl"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Server URL (http://domain:8080)"
+            android:inputType="textUri"
+            android:background="#0F172A"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#475569"
+            android:paddingHorizontal="16dp"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutM3uFields"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etM3uUrl"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="M3U / M3U8 Playlist URL"
+            android:inputType="textUri"
+            android:background="#0F172A"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#475569"
+            android:paddingHorizontal="16dp"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etXmltvUrl"
+        android:layout_width="480dp"
+        android:layout_height="48dp"
+        android:hint="Optional XMLTV EPG URL"
+        android:inputType="textUri"
+        android:background="#0F172A"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#475569"
+        android:paddingHorizontal="16dp"
+        android:singleLine="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="480dp"
+        android:layout_height="54dp"
+        android:text="CONNECT"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6366F1"
+        android:focusable="true" />
+
+</LinearLayout>

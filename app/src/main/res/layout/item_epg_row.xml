@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/tile_selector"
+    android:focusable="true"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="12dp">
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp">
+
+        <ImageView
+            android:id="@+id/ivEpgLogo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tvEpgChannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvProgNow"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#1E1B4B"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:layout_marginEnd="6dp"
+        android:text="Live Broadcast"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/tvProgNext"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#0F172A"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:layout_marginEnd="6dp"
+        android:text="Scheduled Program"
+        android:textColor="#CBD5E1"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/tvProgLater"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#0F172A"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:text="Upcoming"
+        android:textColor="#64748B"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+</LinearLayout>
